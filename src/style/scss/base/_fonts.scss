@@ -1,0 +1,11 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+@media(max-width:767.98px) {
+    :root {
+        font-size: 15px;
+    }
+}

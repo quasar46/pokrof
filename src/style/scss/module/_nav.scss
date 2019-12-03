@@ -1,0 +1,141 @@
+.main-menu {
+    @extend .container;
+
+    margin: 0;
+    padding: 0;
+
+    &-item {
+        list-style: none;
+        margin-right: .7em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        position: relative;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+            transition: color 0.2s;
+        }
+
+        &--active,
+        &:hover {
+            >a {
+                color: $gray_1;
+            }
+        }
+    }
+
+    &-sub-item {
+        list-style: none;
+        text-transform: uppercase;
+    }
+}
+
+@media(min-width:991.98px) {
+    .main-menu {
+        display: flex !important;
+        align-items: center;
+
+        &-item-sep {
+            list-style: none;
+            margin-right: .7em;
+            width: 1.2em;
+            height: .1em;
+            background-color: #fff;
+        }
+
+        &-btn {
+            display: none;
+        }
+
+        &-sub {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -30px;
+            padding: 15px 30px;
+            background-color: $black_2;
+            z-index: 50;
+
+            &-item {
+                margin-bottom: 0.5em;
+
+                a {
+                    white-space: nowrap;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+
+            &-switch {
+                display: none;
+            }
+        }
+
+    }
+}
+
+@media(max-width:991.98px) {
+    .main-menu {
+        display: none;
+        padding: 15px;
+        position: relative;
+        margin: auto;
+
+        &-item {
+            padding: 0.5em 0;
+            border-top: 1px solid $wite_1;
+            margin-right: 0;
+
+            &:last-child {
+                border-bottom: 1px solid $wite_1;
+            }
+        }
+
+        &-item-sep {
+            display: none;
+        }
+
+        &-sub {
+            display: none;
+            padding: 0.5em 0 0 1em;
+
+            &-item {
+                padding: 0.5em 0;
+            }
+
+            &-switch {
+                background-image: url('../img/arrow-wite.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: 6px;
+                transform: rotate(90deg);
+                transition: transform 0.3s;
+                height: 25px;
+                width: 25px;
+                cursor: pointer;
+
+                &--active {
+                    transform: rotate(90deg) scaleX(-1);
+                }
+            }
+        }
+
+        &-btn {
+            border-style: none;
+            fill: #fff;
+            padding: 0;
+            svg {
+                width: 25px;
+                height: 25px;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.main-menu {
+    &__toggle {
+        padding: 0;
+        border-style: none;
+        background-color: transparent;
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    &__item{
+        &--active{}
+        &--parent{}
+        &--divider{}
+    }
+}
+
+@media(min-width:768px) {
+    .main-menu {
+        &__toggle {
+            display: none;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .main-menu {
+        display: none;
+    }
+}

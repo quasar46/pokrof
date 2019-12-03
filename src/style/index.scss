@@ -1,0 +1,18 @@
+@import './css/normalize';
+@import './scss/base/colors';
+@import './scss/base/mixin';
+@import './scss/base/fonts';
+@import './scss/base/layout';
+@import './scss/base/form';
+
+// -----------------------------------
+@import './scss/module/header';
+@import './scss/module/nav';
+@import './scss/module/footer';
+@import './scss/module/menu';
+@import './scss/module/html';
+@import './scss/module/content';
+@import './scss/module/slider';
+@import './scss/module/main';
+@import './scss/module/catalog';
+@import './scss/module/news';

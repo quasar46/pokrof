@@ -1,0 +1,71 @@
+button {
+    -webkit-appearance: none;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 0;
+    outline: none;
+}
+
+button:focus,
+button:hover {
+    border-color: black;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="email"] {
+    box-shadow: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 0;
+    width: 10rem;
+    height: 1.5rem;
+    padding: 0 0.5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+
+    &:focus {
+        border-color: black;
+    }
+
+    &::placeholder {
+        color: #999;
+    }
+}
+
+textarea {
+    resize: vertical;
+
+    &::placeholder {
+        color: #999;
+    }
+}
+
+.btn {
+    background-color: $gold_1;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-size: 1.4rem;
+
+    transition: box-shadow 0.4s;
+}
+
+
+@media(min-width:767.98px) {
+    .btn:hover {
+        box-shadow: 8px 8px 5px -1px #ccc;
+    }
+}
+
+@media(max-width:767.98px) {
+    .btn {
+        font-size: 1.2rem;
+    }
+}

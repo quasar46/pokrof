@@ -1,0 +1,23 @@
+{
+  "name": "at",
+  "description": "",
+  "authors": [
+    "dsv <dsv.95@yandex.ru>"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "vendor"
+  ],
+  "main": "",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "slick-carousel": "^1.8.1",
+    "lightbox2": "^2.11.1"
+  }
+}
