@@ -1,13 +1,43 @@
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .text-content {
-    a {
-        color: $gray_1;
+  a {
+    color: $gray_1;
+  }
+}
+
+.clearfix {
+  height: 1px;
+  clear: both;
+}
+
+.wide-paragraph {
+  background-color: $white_1;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.stars-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    margin-right: 12px;
+    &:last-child {
+        margin-right:0;
     }
+  }
+}
+
+.fill-bg {
+    background: linear-gradient(0deg, #ffffff, #f1f1f1);
 }

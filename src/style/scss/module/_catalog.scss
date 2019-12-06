@@ -49,6 +49,23 @@
     }
 }
 
+.catalog-product-item {
+    text-decoration:none;
+    color:#fff;
+    background-color:$gold_1;
+    transition:.3s;
+
+    &:hover {
+        background-color:$red_1;
+    }
+}
+
+.gallery {
+    background-color: #fff;
+}
+
+
+
 
 @media(min-width:767.98px) {
     .product-item {

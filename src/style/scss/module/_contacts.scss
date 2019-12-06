@@ -1,0 +1,43 @@
+.contacts-map {
+  background-image: url(../img/map-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 715px;
+  height: 435px;
+  float: right;
+  margin-left: 30px;
+}
+
+@media (max-width: 767.9px) {
+  .contacts-map {
+    display:none;
+  }
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+
+  &__link {
+    color: $black_2;
+    text-decoration: none;
+  }
+
+  &__item {
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-position: left 2px;
+    background-size: 23px 23px;
+    margin-bottom: 15px;
+
+    &--address {
+      background-image: url(../img/icons/map.svg);
+    }
+    &--phone {
+      background-image: url(../img/icons/phone.svg);
+    }
+    &--email {
+      background-image: url(../img/icons/mail.svg);
+    }
+  }
+}

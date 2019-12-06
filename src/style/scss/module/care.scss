@@ -1,0 +1,91 @@
+.care-title {
+  font-size: 29px;
+  font-weight: 700;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.care-body__thumb {
+  float: left;
+  margin-right: 30px;
+}
+
+@media (max-width: 575.9px) {
+  .care-body__thumb {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.care-table {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  &-row {
+    display: flex;
+
+    .numb {
+      margin-right: auto;
+    }
+  }
+  &-column {
+    display: flex;
+    justify-content: center;
+    width: 33.33%;
+    outline: 1px solid #ededed;
+    text-align: center;
+    padding: 5px;
+
+    &--caption {
+      color: $red_1;
+    }
+  }
+}
+
+.care-body-list {
+  margin-bottom: 40px;
+  padding-left:40px;
+}
+
+.care-body-list-second {
+  margin-bottom: 40px;
+  list-style: none;
+  &__item {
+    position: relative;
+  }
+  &__item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: $red_1;
+    left: -25px;
+    top: 7px;
+  }
+}
+
+ol {
+  counter-reset: myCounter;
+}
+
+.care-body-list__item {
+  position:relative;
+  list-style: none;
+}
+
+.care-body-list__item::before {
+  position:absolute;
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  color: $red_1;
+  display: inline-block;
+  text-align: center;
+  margin: 5px 10px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  left:-60px;
+  top:-10px;
+}

@@ -49,6 +49,12 @@
     }
 }
 
+.item-slider-items__news {
+    .product-item {
+        max-width:370px;
+    }
+}
+
 
 @media(min-width:767.98px) {
     .news-item {

@@ -93,7 +93,7 @@
     }
 
     .slick-dotted {
-        margin-bottom: 2em;
+        margin-bottom: 5em;
     }
 }
 
@@ -121,13 +121,12 @@
     }
 }
 
-
 @media(min-width:600px) {
     .item-slider-items {
         position: relative;
 
-        &::before,
-        &:after {
+        &:last-child::before,
+        &:last-child:after {
             content: ' ';
             display: block;
             position: absolute;
@@ -137,7 +136,7 @@
             background-image: url('../img/bg.svg');
             background-repeat: repeat-x;
             background-size: auto 180px;
-            z-index: -1;
+            z-index: 1;
         }
 
         &:after {
