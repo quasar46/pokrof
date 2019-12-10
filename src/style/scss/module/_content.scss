@@ -41,3 +41,9 @@ p {
 .fill-bg {
     background: linear-gradient(0deg, #ffffff, #f1f1f1);
 }
+
+@media(max-width:767.98px) {
+  .title--indent {
+    text-align: center;
+  }
+}

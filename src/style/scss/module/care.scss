@@ -1,8 +1,17 @@
 .care-title {
   font-size: 29px;
   font-weight: 700;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  margin-bottom: 0.5em;
+}
+
+.care-body {
+  padding-top: 4em;
+}
+
+@media (max-width: 767.98px) {
+  .care-body {
+    padding-top: 2em;
+  }
 }
 
 .care-body__thumb {
@@ -45,7 +54,7 @@
 
 .care-body-list {
   margin-bottom: 40px;
-  padding-left:40px;
+  padding-left: 40px;
 }
 
 .care-body-list-second {
@@ -71,12 +80,12 @@ ol {
 }
 
 .care-body-list__item {
-  position:relative;
+  position: relative;
   list-style: none;
 }
 
 .care-body-list__item::before {
-  position:absolute;
+  position: absolute;
   counter-increment: myCounter;
   content: counter(myCounter);
   color: $red_1;
@@ -86,6 +95,6 @@ ol {
   line-height: 40px;
   width: 40px;
   height: 40px;
-  left:-60px;
-  top:-10px;
+  left: -60px;
+  top: -10px;
 }
