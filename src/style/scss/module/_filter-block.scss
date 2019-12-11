@@ -1,0 +1,35 @@
+.filter-block {
+  margin-right:30px;
+}
+
+.filter-block__list {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.filter-block__item:hover a {
+  color:$red_1;
+}
+
+.filter-block__item a{
+  text-decoration:none;
+  text-transform:lowercase;
+  color:$black_2;
+  transition:.3s;
+}
+
+@media(max-width:767.9px) {
+  .filter-block {
+    margin-right:0;
+  }
+
+  .filter-block__list {
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .filter-block__item {
+    margin-right:20px;
+  }
+}
