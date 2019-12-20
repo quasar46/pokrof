@@ -1,7 +1,10 @@
 .main-catalog {
   padding-top: 4em;
   padding-bottom: 4em;
-
+  &-row {
+    position:relative;
+    z-index:3;
+  }
   &-items {
     flex-wrap: wrap;
     display: flex;
