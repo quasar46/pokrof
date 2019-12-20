@@ -338,6 +338,7 @@
 
 .main-filter-wrapper {
   display: flex;
+  align-items: flex-start;
 }
 
 @media (max-width: 575.9px) {
@@ -612,13 +613,13 @@ img.product-item__img {
 .main-slider .slick-dots {
   position: relative;
   top: -60px;
-  @media (max-width:768px) {
-    top:-40px;
+  @media (max-width: 768px) {
+    top: -40px;
   }
 }
 
 .main-slider .slick-dots button {
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 .main-slider .slick-active button {
