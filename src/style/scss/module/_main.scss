@@ -2,8 +2,8 @@
   padding-top: 4em;
   padding-bottom: 4em;
   &-row {
-    position:relative;
-    z-index:3;
+    position: relative;
+    z-index: 3;
   }
   &-items {
     flex-wrap: wrap;
@@ -103,6 +103,9 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    &--catalog {
+      margin-bottom: 0;
+    }
   }
 }
 
