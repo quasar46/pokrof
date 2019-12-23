@@ -3,25 +3,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
-  padding:10px;
-  padding:20px;
+  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
   width: 33.33%;
   text-decoration: none;
   &__pic {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 370px;
     background-color: #fff;
-    border:1px solid #e8e8e8;
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: 80px;
-    }
+    border: 1px solid #e8e8e8;
   }
   &__sub {
     background-color: $gold_1;
@@ -34,11 +28,11 @@
   &:hover .catalog-cart__sub {
     background-color: $red_1;
   }
-  @media(max-width:991.9px) {
-    width:50%;
+  @media (max-width: 991.9px) {
+    width: 50%;
   }
-  @media(max-width:575.9px) {
-    width:370px;
-    margin:0 auto;
+  @media (max-width: 575.9px) {
+    width: 370px;
+    margin: 0 auto;
   }
 }

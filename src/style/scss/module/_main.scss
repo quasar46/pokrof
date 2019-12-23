@@ -255,7 +255,9 @@
   background-color: #white_1;
   padding-top: 100px;
   padding-bottom: 115px;
-
+  &--mod {
+    padding-top: 50px;
+  }
   &-body {
     position: relative;
     display: flex;
@@ -300,11 +302,14 @@
   }
 
   &-content {
-    margin-left: 50px;
+    margin-left: 80px;
+    @media (max-width: 991.9px) {
+      margin-left: 0;
+    }
   }
 
   &-slider {
-    margin-right: 25px;
+    margin-right: 70px;
     padding: 70px 0;
     width: 60px;
   }
@@ -316,6 +321,7 @@
 
 .main-gallery-wrap {
   display: flex;
+  margin-bottom: 20px;
 
   .slick-arrow {
     background-image: url(../img/prev.svg);
@@ -428,13 +434,8 @@
 
 .main-gallery-body__text {
   p {
-    color: $black_1;
-    &:first-child {
-      color: $black_2;
-    }
-    &:nth-child(2) {
-      color: $red_1;
-    }
+    font-size: 1.06rem;
+    font-weight: 500;
   }
 
   .price-item {
