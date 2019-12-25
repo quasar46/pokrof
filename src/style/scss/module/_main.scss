@@ -594,27 +594,27 @@ img.product-item__img {
 .main-catalog-row__item {
   display: flex !important;
   justify-content: center;
-  width: 33.33%;
+  flex-basis: 33.33%;
+  flex-grow: 1;
   height: auto;
   padding: 20px;
 }
 
-@media (max-width: 991.9px) {
+@media (max-width: 991.98px) {
   .main-catalog-row__item {
-    width: 50%;
+    flex-basis: 50%;
   }
 }
 
-@media (max-width: 767.9px) {
+@media (max-width: 767.98px) {
   .main-filter-wrapper {
     flex-direction: column;
   }
 }
 
-@media (max-width: 575.8px) {
+@media (max-width: 575.98px) {
   .main-catalog-row__item {
-    width: 370px;
-    margin: 0 auto;
+    flex-basis: 100%;
   }
 }
 
@@ -653,7 +653,7 @@ img.product-item__img {
   }
 }
 
-.main-slider__arrow{
+.main-slider__arrow {
   // background-image: url(/img/src/img/arrow-gold.svg);
   // display: inline-block;
   position: absolute;
@@ -665,7 +665,7 @@ img.product-item__img {
   // background-size: contain;
   // background-repeat: no-repeat;
   // transition: opacity 0.3s;
-  &:hover path{
-    fill:$red_1;
+  &:hover path {
+    fill: $red_1;
   }
 }

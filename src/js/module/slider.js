@@ -2,7 +2,7 @@ jQuery(function ($) {
     if ($('.main-slider').length && $().slick) {
         var spead = $('.main-slider').data('spead')
         $('.main-slider').slick({
-            autoplay: spead ? false : false,
+            autoplay: spead ? true : true,
             autoplaySpeed: spead,
             dots: true
         })
