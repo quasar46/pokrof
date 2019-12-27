@@ -4,6 +4,7 @@
   &-row {
     position: relative;
     z-index: 3;
+    justify-content: center;
     &--mod {
       .product-item {
         &::before {
