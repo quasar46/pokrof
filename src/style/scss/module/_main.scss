@@ -4,6 +4,16 @@
   &-row {
     position: relative;
     z-index: 3;
+    &--mod {
+      .product-item {
+        &::before {
+          content: none;
+        }
+        &::after {
+          content: none;
+        }
+      }
+    }
   }
   &-items {
     flex-wrap: wrap;
