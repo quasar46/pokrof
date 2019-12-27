@@ -37,14 +37,14 @@ jQuery(function ($) {
         })
     }
 
-    if ($('.main-exhibition-slider').length && $().slick) {
-        $('.main-exhibition-slider').slick({
-            arrows: false,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 5000,
-        })
-    }
+    // if ($('.main-exhibition-slider').length && $().slick) {
+    //     $('.main-exhibition-slider').slick({
+    //         arrows: false,
+    //         dots: true,
+    //         autoplay: true,
+    //         autoplaySpeed: 5000,
+    //     })
+    // }
 
     if ($('.main-gallery-slider').length && $().slick) {
         /*navigation*/
