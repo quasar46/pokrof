@@ -45,6 +45,9 @@
       background-repeat: no-repeat;
       background-position: left bottom;
       margin-bottom: 2em;
+      &--mod {
+        height: 70px;
+      }
     }
 
     &__title {

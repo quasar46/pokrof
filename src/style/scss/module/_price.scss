@@ -1,0 +1,16 @@
+.price {
+  &__content {
+    color: #2d2d2d;
+  }
+}
+
+.main-price-title {
+  display: flex;
+  justify-content: flex-start;
+  .main-catalog-item__icon {
+    max-width: 103px;
+    @media (min-width: 1199.98px) {
+      margin-right: 20px;
+    }
+  }
+}
