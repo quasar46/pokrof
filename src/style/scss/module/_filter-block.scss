@@ -1,6 +1,9 @@
 .filter-block {
   margin-right: 30px;
   flex: 1 0 220px;
+  &__title {
+    margin:20px 0;
+  }
 }
 
 .filter-block__list {

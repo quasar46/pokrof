@@ -14,7 +14,6 @@
   &--mod {
     padding-bottom: 0;
   }
-
   &__img {
     display: block;
   }
@@ -97,9 +96,14 @@
   color: #fff;
   background-color: $gold_1;
   transition: 0.3s;
-
   &:hover {
     background-color: $red_1;
+  }
+  &--mod {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
 
